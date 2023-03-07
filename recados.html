@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panda Notes 🐼</title>
+        <link rel="shortcut icon" href="./img/icons8-kiss-panda-24.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/recados.css">
+        
+</head>
+<body>
+    <main class="main-recados">
+      <input type="submit" class="btn-sair" id="btn-sair" value="Sair">
+      <h1>Panda Notes 🐼</h1>
+      <div class="container-recados">
+        <div class="row-inputs">
+          <form id="form-recados">
+            <div class="container">
+              <div class="input-titulo">
+                <div class="textfield">
+                  <label for="titulo">Título</label>
+                  <input type="text" name="titulo" id="titulo" placeholder="Escreva aqui o título da sua nota!">
+                </div>
+              </div>
+              <div class="input-descricao">
+                <div class="textfield">
+                  <label for="descricao">Descrição</label>
+                  <input type="text" name="descricao" id="descricao" placeholder="Escreva aqui a descrição da sua nota!">
+                </div>
+              </div>
+            </div>
+            <input type="hidden" name="idx" value="novo" id="idx">
+            <div class="btns">
+              <input type="submit" class="btn" id="btn-salvar" value="Salvar">
+            </div>
+          </form>
+        </div>
+        <div class="row-table" >
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/recados.js"></script>
+</body>
+</html>
